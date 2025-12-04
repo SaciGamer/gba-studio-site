@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'GBA Studio',
-  tagline: 'Create your own GBA games easily!',
+  tagline: 'Documentação oficial do projeto',
   favicon: 'img/gba-studio.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,15 +15,16 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://gba-studio.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/gba-studio-site/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'SaciGamer', // Usually your GitHub org/user name.
+  projectName: 'gba-studio-site', // Usually your repo name.
+  deploymentBranch: 'gh-pages',   // branch usada para publicar (opcional, default é 'gh-pages')
 
   onBrokenLinks: 'throw',
 
@@ -31,8 +32,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'pt',
+    locales: ['en', 'pt'],
   },
 
   presets: [
