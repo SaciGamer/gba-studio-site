@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="GBA Studio logo <head />">
+      description="A quick and easy to use drag and drop retro game creaator for your favorite games in gba <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
