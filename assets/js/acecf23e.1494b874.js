@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgba_studio_web_page=globalThis.webpackChunkgba_studio_web_page||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/gba-studio-site/blog","blogTitle":"Blog","authorsListPath":"/gba-studio-site/blog/authors"}')}}]);
