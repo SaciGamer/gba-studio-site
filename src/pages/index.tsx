@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="http://google.com.br/#gba-studio/docs/intro">
             GBA Docs Tutorial - 5min ⏱️
           </Link>
         </div>
@@ -33,8 +33,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="GBA Studio logo <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
