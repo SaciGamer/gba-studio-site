@@ -86,10 +86,9 @@ const config: Config = {
         // { to: /* '/docs/intro' */ 'http://google.com.br/#gba-studio/docs/intro', label: 'Docs', position: 'left' },
         { to: '/docs' , label: 'Docs', position: 'left' },
         { href: 'https://github.com/SaciGamer/gba-studio', label: 'GitHub', position: 'left' },
-        { href: 'https://www.patreon.com/cw/gbastudiodev', label: 'Download', position: 'left' },
-        // { href: '/download', label: 'Download', position: 'left' },
+        { href: 'https://sacigamer.itch.io/gba-studio', label: 'Download', position: 'left' },
         {
-          href: 'https://donate.example.com',
+          href: 'https://www.patreon.com/cw/gbastudiodev',
           label: 'Donate',
           position: 'right',
           className: 'navbar__donate',
