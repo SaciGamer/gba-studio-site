@@ -8,7 +8,7 @@ Depois de fazer o backup, você ainda poderá salvar seu projeto usando `Arquivo
 
 ## Reportando Problemas
 
-Se você encontrou um erro no GB Studio, agradecemos se você registrar um problema em:
+Se você encontrou um erro no GBA Studio, agradecemos se você registrar um problema em:
 https://github.com/SaciGamer/gba-studio/issues
 
 ## Obtendo Ajuda

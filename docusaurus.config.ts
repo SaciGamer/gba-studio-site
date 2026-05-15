@@ -124,7 +124,7 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.com/invite/fa8TZvc9sC',
+              href: 'https://discord.gg/fa8TZvc9sC',
             },
             {
               label: "Patreon",
