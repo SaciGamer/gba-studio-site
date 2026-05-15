@@ -37,7 +37,7 @@ export default function HomepageSocial(): ReactNode {
               Chat with the community on our
             </Translate>
             {" "}
-            <a href="https://discord.gg/fa8TZvc9sC">Discord channel</a>. 
+            <a href="https://discord.gg/fa8TZvc9sC">Discord</a>. 
             &nbsp;
             <Translate id="homepage.social.support">
               You can support development at
