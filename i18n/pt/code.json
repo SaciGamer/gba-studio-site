@@ -1,0 +1,27 @@
+{
+  "homepage.main.description": { "message": "Um criador de jogos retrô {quick} e {easy} de usar, com sistema {dragDrop} {gameCreator} para o seu portátil favorito." },
+  "homepage.main.description.quick": { "message": "rápido" },
+  "homepage.main.description.easy": { "message": "fácil" },
+  "homepage.main.description.dragDrop": { "message": "arrastar e soltar" },
+  "homepage.main.description.gameCreator": { "message": "de jogos" },
+  "homepage.main.featureItem.easyToUse.title": {
+    "message": "🎮 Fácil de Usar"
+  },
+  "homepage.main.featureItem.easyToUse": {
+    "message": "O GBA Studio foi projetado desde o início para ser simples de instalar e permitir que você coloque seus jogos em funcionamento rapidamente, sem complicações."
+  },
+  "homepage.main.featureItem.focusOnWhatMatters.title": {
+    "message": "🎯 Foque no que Importa"
+  },
+  "homepage.main.featureItem.focusOnWhatMatters": {
+    "message": "Com o GBA Studio, você pode se concentrar no lado criativo — desenvolvendo suas ideias e construindo seus mundos. Deixe que o ambiente cuide das tarefas repetitivas e da organização."
+  },
+  "homepage.main.featureItem.poweredModernTechnologies.title": {
+    "message": "⚛️ Equipado com Tecnologias Modernas"
+  },
+  "homepage.main.featureItem.poweredModernTechnologies": {
+    "message": "O GBA Studio foi projetado desde o início para ser simples de instalar e permitir que você coloque seus jogos em funcionamento rapidamente, sem complicações."
+  }
+}
+
+

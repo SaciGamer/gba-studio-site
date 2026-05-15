@@ -1,0 +1,35 @@
+{
+  "homepage.main.description": {
+    "message": "A {quick} and {easy} to use {dragDrop} retro {gameCreator} for your favourite handheld video game system."
+  },
+  "homepage.main.description.quick": {
+    "message": "quick"
+  },
+  "homepage.main.description.easy": {
+    "message": "easy"
+  },
+  "homepage.main.description.dragDrop": {
+    "message": "drag and drop"
+  },
+  "homepage.main.description.gameCreator": {
+    "message": "game creator"
+  },
+  "homepage.main.featureItem.easyToUse.title": {
+    "message": "🎮 Easy to Use"
+  },
+  "homepage.main.featureItem.easyToUse": {
+    "message": "GBA Studio was designed from the ground up to be simple to install and get your games up and running quickly, without hassle."
+  },
+  "homepage.main.featureItem.focusOnWhatMatters.title": {
+    "message": "🎯 Focus on What Matters"
+  },
+  "homepage.main.featureItem.focusOnWhatMatters": {
+    "message": "With GBA Studio you can focus on the creative side — developing your ideas and building your worlds. Let the environment handle repetitive tasks and organization."
+  },
+  "homepage.main.featureItem.poweredModernTechnologies.title": {
+    "message": "⚛️ Powered by Modern Technologies"
+  },
+  "homepage.main.featureItem.poweredModernTechnologies": {
+    "message": "GBA Studio was designed from the ground up to be simple to install and get your games up and running quickly, without hassle."
+  }
+}

@@ -4,10 +4,12 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageSocial from '@site/src/components/HomepageSocial';
 import { useColorMode } from "@docusaurus/theme-common";
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import Translate from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -18,11 +20,19 @@ function HomepageHeader() {
         <div className={clsx(styles.heroContent)}>
           <div className={clsx(styles.heroLeft)}>
             <p className="hero__subtitle">
-              A <strong>quick</strong> and <strong>easy</strong> to use{" "}
-              <strong>drag and drop</strong> retro <strong>game creator</strong>{" "}
-              for your favourite handheld video game system.
+              <Translate
+                id="homepage.main.description"
+                values={{
+                  quick: <strong><Translate id="homepage.main.description.quick">quick</Translate></strong>,
+                  easy: <strong><Translate id="homepage.main.description.easy">easy</Translate></strong>,
+                  dragDrop: <strong><Translate id="homepage.main.description.dragDrop">drag and drop</Translate></strong>,
+                  gameCreator: <strong><Translate id="homepage.main.description.gameCreator">game creator</Translate></strong>,
+                }}
+              >
+                {'A {quick} and {easy} to use {dragDrop} retro {gameCreator} for your favourite handheld video game system.'}
+              </Translate>
             </p>
-            <p>Available on Windows
+            <p>Available on Windows.
               {/* , Mac and Linux.*/}
             </p> 
             <div className={styles.buttons}>
@@ -71,6 +81,7 @@ export default function Home(): ReactNode {
       description={siteConfig.tagline}
     >
       <HomepageHeader />
+      <HomepageSocial />
       <main>
         <HomepageFeatures />
       </main>
