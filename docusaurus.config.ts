@@ -1,4 +1,4 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -6,7 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'GBA Studio',
-  tagline: 'Documentação oficial do projeto',
+  tagline:     
+    "A quick and easy to use drag and drop retro game creator for your favourite handheld video game system.",
   favicon: 'img/gba-studio.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -22,18 +23,36 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'SaciGamer', // Usually your GitHub org/user name.
+  organizationName: 'SaciGamer',  // Usually your GitHub org/user name.
   projectName: 'gba-studio-site', // Usually your repo name.
   deploymentBranch: 'gh-pages',   // branch usada para publicar (opcional, default é 'gh-pages')
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'pt',
-    locales: ['en', 'pt'],
+    defaultLocale: 'en',
+    locales: ["en", "pt", "es"/*, "de", "pl"*/],
+    localeConfigs: {
+      en: {
+        label: "English",
+      },
+      pt: {
+        label: "Português",
+      },
+      // de: {
+      //   label: "Deutsch",
+      // },
+      es: {
+        label: "Español",
+      },
+      // pl: {
+      //   label: "Polski",
+      // },
+    },
   },
 
   presets: [
@@ -45,22 +64,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+            'https://github.com/SaciGamer/gba-studio-site/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -71,7 +75,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/share.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -82,24 +86,20 @@ const config: Config = {
         src: 'img/gba-logo.png',
       },
       items: [
-        { to: '/about', label: 'About', position: 'left' },
-        // { to: /* '/docs/intro' */ 'http://google.com.br/#gba-studio/docs/intro', label: 'Docs', position: 'left' },
-        { to: '/docs' , label: 'Docs', position: 'left' },
-        { href: 'https://github.com/SaciGamer/gba-studio', label: 'GitHub', position: 'left' },
-        { href: 'https://sacigamer.itch.io/gba-studio', label: 'Download', position: 'left' },
+        { type: 'localeDropdown', position: 'left', className: "locale" },
+        { to: '/about', label: 'About', position: 'right' },
+        { type: 'doc', docId: 'intro', label: 'Docs', position: 'right' },
+        { href: 'https://github.com/SaciGamer/gba-studio', label: 'GitHub', position: 'right' },
+        { href: 'https://sacigamer.itch.io/gba-studio', label: 'Download', position: 'right' },
+        {
+          type: 'search',
+          position: 'right',
+        },
         {
           href: 'https://www.patreon.com/cw/gbastudiodev',
           label: 'Donate',
           position: 'right',
-          className: 'navbar__donate',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
-        {
-          type: 'search',
-          position: 'right',
+          className: 'donate-btn',
         },
       ],
     },
@@ -107,38 +107,42 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Learn',
           items: [
             {
-              label: 'Tutorial',
-              to: 'http://google.com.br/#gba-studio/tutorial', // '/docs/intro',
+              label: "Introduction",
+              href: "/docs/intro",
+            },
+            {
+              label: "Installation",
+              href: "/docs/installation",
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
             {
               label: 'Discord',
               href: 'https://discord.com/invite/fa8TZvc9sC',
             },
-            // {
-            //   label: 'X',
-            //   href: 'https://x.com/docusaurus',
-            // },
+            {
+              label: "Patreon",
+              href: "https://www.patreon.com/cw/gbastudiodev",
+            },
           ],
         },
         {
-          title: 'More',
+          title: 'Downloads',
           items: [
             // {
             //   label: 'Blog',
             //   to: '/blog',
             // },
+            {
+              href: "https://sacigamer.itch.io/gba-studio",
+              label: "Download",
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/SaciGamer/gba-studio',

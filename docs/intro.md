@@ -2,46 +2,22 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+GBA Studio is a drag and drop game creator for making Game Boy Advance games.
 
-## Getting Started
+It is designed to be usable by people with little to no previous programming knowledge using simple visual scripting. Used the [Butano](https://github.com/GValiente/butano) library to facilitate transpilation and compilation to the final file.
 
-Get started by **creating a new site**.
+You can generate ROM files that can be run in an emulator, on a web page or on real Game Boy Advance hardware.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+<img title="Title" src="/img/screenshots/game-title.png" width="592" />
 
-### What you'll need
+## Support
+If you'd like to support the ongoing development of GBA Studio check out the [official Patreon](https://www.patreon.com/cw/gbastudiodev) account where you can see regular progress updates and sometimes get early access to beta releases. 
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+## Download
+You can get latest version of GBA Studio from the
+[Itch.io download page](https://sacigamer.itch.io/gba-studio) and older releases are archived on [GitHub](https://github.com/SaciGamer/gba-studio/releases).
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+<!-- This documentation is also [available in PDF format](/assets/pdf/www.gbstudio.dev-docs.pdf). -->

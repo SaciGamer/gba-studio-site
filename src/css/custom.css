@@ -28,3 +28,18 @@
   --ifm-color-primary-lightest: #ddab4f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.donate-btn {
+  border: 2px solid #fff;
+  background: #c27e25;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.donate-btn:hover {
+  background: #c27e25;
+  color: #fff;
+  border: 2px solid #88551a;
+  cursor: pointer;
+}
