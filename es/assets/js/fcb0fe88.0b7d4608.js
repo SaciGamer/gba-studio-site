@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgba_studio_web_page=globalThis.webpackChunkgba_studio_web_page||[]).push([[35],{2767:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/gba-studio-site/es/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
