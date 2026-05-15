@@ -1,5 +1,6 @@
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
+<!--  SOMENTE EM .mdx
+import useBaseUrl from '@docusaurus/useBaseUrl'; 
+-->
 ---
 sidebar_position: 1
 ---
@@ -12,7 +13,11 @@ It is designed to be usable by people with little to no previous programming kno
 
 You can generate ROM files that can be run in an emulator, on a web page or on real Game Boy Advance hardware.
 
-<img src={useBaseUrl('img/screenshots/game-title.png')} alt="Menu Game Jam Print Screen" width="600" />
+<!-- 
+SOMENTE EM .mdx
+<img src={useBaseUrl('img/screenshots/game-title.png')} alt="Menu Game Jam Print Screen" width="600" /> 
+-->
+![Menu Game Jam Print Screen](/img/screenshots/game-title.png)
 
 ## Support
 If you'd like to support the ongoing development of GBA Studio check out the [official Patreon](https://www.patreon.com/cw/gbastudiodev) account where you can see regular progress updates and sometimes get early access to beta releases. 
@@ -22,4 +27,4 @@ If you'd like to support the ongoing development of GBA Studio check out the [of
 You can get latest version of GBA Studio from the
 [Itch.io download page](https://sacigamer.itch.io/gba-studio) and older releases are archived on [GitHub](https://github.com/SaciGamer/gba-studio/releases).
 
-<!-- This documentation is also [available in PDF format](/assets/pdf/www.gbstudio.dev-docs.pdf). -->
+<!-- This documentation is also [available in PDF format](/assets/pdf/www.gbastudio.dev-docs.pdf). -->
