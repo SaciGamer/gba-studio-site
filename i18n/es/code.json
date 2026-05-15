@@ -1,6 +1,6 @@
 {
   "homepage.main.description": {
-    "message": "Un creador de juegos retro {quick} y {easy} de usar, con sistema {dragDrop} {gameCreator} para tu videoconsola portátil favorita."
+    "message": "Un {gameCreator} retro {quick} y {easy} de usar, con sistema {dragDrop} para tu videoconsola portátil favorita."
   },
   "homepage.main.description.quick": {
     "message": "rápido"
@@ -12,7 +12,7 @@
     "message": "arrastrar y soltar"
   },
   "homepage.main.description.gameCreator": {
-    "message": "de juegos"
+    "message": "creador de juegos"
   },
   "homepage.main.featureItem.easyToUse.title": {
     "message": "🎮 Fácil de Usar"
@@ -31,5 +31,11 @@
   },
   "homepage.main.featureItem.poweredModernTechnologies": {
     "message": "GBA Studio se diseñó desde cero para que sea fácil de instalar y para que puedas poner en marcha tus juegos rápidamente, sin complicaciones."
+  },
+  "homepage.social.chat": {
+    "message": "Chatea con la comunidad en nuestro"
+  },
+  "homepage.social.support": {
+    "message": "Puedes apoyar el desarrollo en"
   }
 }

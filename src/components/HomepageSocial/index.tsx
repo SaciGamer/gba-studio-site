@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import Translate from "@docusaurus/Translate";
 
 export default function HomepageSocial(): ReactNode {
   return (
@@ -32,9 +33,16 @@ export default function HomepageSocial(): ReactNode {
             </a>
           </div>
           <div>
-            Chat with the community on our{" "}
-            <a href="https://discord.gg/fa8TZvc9sC">Discord channel</a>. {" "}
-            You can support development at{" "}
+            <Translate id="homepage.social.chat">
+              Chat with the community on our
+            </Translate>
+            {" "}
+            <a href="https://discord.gg/fa8TZvc9sC">Discord channel</a>. 
+            &nbsp;
+            <Translate id="homepage.social.support">
+              You can support development at
+            </Translate>
+            {" "}
             <a href="https://www.patreon.com/cw/gbastudiodev">Patreon</a>.
           </div>
         </div>

@@ -31,5 +31,11 @@
   },
   "homepage.main.featureItem.poweredModernTechnologies": {
     "message": "GBA Studio was designed from the ground up to be simple to install and get your games up and running quickly, without hassle."
+  },
+  "homepage.social.chat": {
+    "message": "Chat with the community on our"
+  },
+  "homepage.social.support": {
+    "message": "You can support development at"
   }
 }
