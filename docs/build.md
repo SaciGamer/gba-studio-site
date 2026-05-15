@@ -20,7 +20,7 @@ This allows you to quickly preview a specific scene from your game without needi
 
 ## Build as ROM
 
-Clicking the _Build button_ will build your game and create a ROM file in your project's build folder as `$PROJECT_ROOT/build/game.gba`. You can play this ROM file in any compatible emulator such as [Virtual Boy](https://visualboyadvance.org/download/) or [mGBA](https://mgba.io/downloads.html).
+Clicking the _Build button_ will build your game and create a ROM file in your project's build folder as `$PROJECT_ROOT/build/$PROJECT_NAME.gba`. You can play this ROM file in any compatible emulator such as [Virtual Boy](https://visualboyadvance.org/download/) or [mGBA](https://mgba.io/downloads.html).
 
 <!--
 ## Build and deploy for Web
