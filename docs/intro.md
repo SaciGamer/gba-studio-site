@@ -1,9 +1,10 @@
-<!--  SOMENTE EM .mdx
-import useBaseUrl from '@docusaurus/useBaseUrl'; 
--->
 ---
 sidebar_position: 1
 ---
+
+<!--  SOMENTE EM .mdx
+import useBaseUrl from '@docusaurus/useBaseUrl'; 
+-->
 
 # Introduction
 

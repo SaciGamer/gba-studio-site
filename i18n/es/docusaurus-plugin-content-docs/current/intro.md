@@ -19,4 +19,4 @@ Si deseas apoyar el desarrollo continuo de GBA Studio, visita la cuenta [oficial
 Puedes obtener la última versión de GBA Studio en la
 [página de descargas de Itch.io](https://sacigamer.itch.io/gba-studio). Las versiones anteriores están archivadas en [GitHub](https://github.com/SaciGamer/gba-studio/releases).
 
-<!-- Esta documentación también está [disponible en formato PDF](/assets/pdf/www.gbstudio.dev-docs.pdf). -->
+<!-- Esta documentación también está [disponible en formato PDF](/assets/pdf/www.gbastudio.dev-docs.pdf). -->
