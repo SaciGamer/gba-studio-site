@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgba_studio_web_page=globalThis.webpackChunkgba_studio_web_page||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);
