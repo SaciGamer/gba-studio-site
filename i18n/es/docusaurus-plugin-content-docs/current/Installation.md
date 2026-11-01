@@ -1,15 +1,23 @@
---- 
+---
 sidebar_position: 2
+title: Instalación
+description: Instala GBA Studio y prepara el entorno de Windows.
 ---
 
 # Instalación
 
-Descarga la versión que desees desde la [página de descargas de Itch.io](https://sacigamer.itch.io/gba-studio) o usa [GitHub](https://github.com/SaciGamer/gba-studio/releases) para versiones anteriores.
+## Requisitos
 
-Ocasionalmente, también puedes encontrar versiones beta en [Patreon](https://www.patreon.com/cw/gbastudiodev).
+Necesitas GBA Studio, una carpeta de proyecto con permisos de lectura y escritura y los archivos del emulador integrado EmulatorJS/mGBA. Un [mGBA](https://mgba.io/) externo es opcional para pruebas independientes. El compilador, Makefile y herramientas Butano deben pertenecer a la misma distribución.
 
-## Windows
+La versión del paquete del repositorio es `0.5.0`; una distribución publicada puede ser diferente. No mezcles toolchains de distintas versiones. Node/Yarn son requisitos para mantenedores, no para usuarios de un paquete preparado.
 
-Hay dos versiones de GBA Studio disponibles para Windows. La versión _Squirrel Installer_ solo requiere que descomprimas el archivo, hagas doble clic en él y esperes unos segundos mientras la aplicación se instala en tu unidad `C:\`. Después de la instalación, se agregará automáticamente un acceso directo a tu escritorio y la aplicación se iniciará. La aplicación se instalará en `%LocalAppData%\Programs\gba-studio`. Si necesitas instalarlo en otra ubicación, usa la versión manual.
+## Primer inicio
 
-La versión manual es un archivo ZIP que contiene los archivos de la aplicación. Puedes extraerlo en cualquier ubicación. Después de extraerlo, haz doble clic en `GBA Studio.exe` para ejecutarlo.
+1. Instala o extrae GBA Studio en una carpeta permitida por Windows.
+2. Abre el ejecutable.
+3. Crea un proyecto o abre un archivo `.gbaproj`.
+4. Confirma que la carpeta del proyecto permite escritura.
+5. Usa **Play** después de crear una escena válida e importar los assets.
+
+Si la aplicación no puede guardar, mueve el proyecto a una carpeta escribible y revisa el antivirus. Si no se genera la ROM, consulta primero el log de build.

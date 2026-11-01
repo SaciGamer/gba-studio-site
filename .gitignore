@@ -18,3 +18,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local documentation verification artifacts
+.docusaurus-*/
+/CAPTURAS_DOCUMENTACAO_MANIFEST.json
+AGENTS.md
+PLANO*

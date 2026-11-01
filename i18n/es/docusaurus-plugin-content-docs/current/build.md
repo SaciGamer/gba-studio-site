@@ -1,13 +1,15 @@
 ---
-sidebar_position: 7
+sidebar_position: 3
+title: Compilar y ejecutar
+description: Compila una ROM y prueba el proyecto en el emulador integrado.
 ---
 
-# Construyendo tu juego
+# Compilar y ejecutar
 
-## Jugar
+**Play** compila el proyecto y abre el emulador integrado EmulatorJS/mGBA. **Build** produce los archivos generados y la ROM con su log. Los recursos del proyecto y `assets/` son fuentes; C++, headers y ROM son resultados derivados.
 
-Al hacer clic en el _botón Play_ situado en la parte superior derecha de la ventana del _Editor de proyectos_, se iniciará la compilación de tu juego y, una vez finalizada, se abrirá una nueva ventana donde podrás jugar.
+Antes de compilar, elige la escena inicial, revisa las referencias y guarda. Corrige el primer error real del log en las fuentes. Settings > Demo Configuration configura teclado, controlador, filtros, menú e indicadores FPS/CPU.
 
-## Compilar como ROM
+Prueba escenas, colisiones, interacciones, confirmación de diálogo, audio y persistencia. Cargar variables conserva el mundo; Game Data Load restaura la escena y ejecuta sus acciones On Load. Reinicia la ROM para comprobar los datos persistentes.
 
-Al hacer clic en el _botón Build_, se compilará tu juego y se creará un archivo ROM en la carpeta de compilación de tu proyecto como `$PROJECT_ROOT/build/$PROJECT_NAME.gba`. Puedes jugar a este archivo ROM en cualquier emulador compatible, como [Virtual Boy](https://visualboyadvance.org/download/) o [mGBA](https://mgba.io/downloads.html).
+Un mGBA externo es opcional para una prueba independiente. Conserva el proyecto completo junto a la ROM distribuida. Consulta [Build de ROM](./build-and-release/build) y [Guardar y cargar](./guides/save-and-load).

@@ -14,6 +14,18 @@
   "homepage.main.description.gameCreator": {
     "message": "game creator"
   },
+  "homepage.hero.imageAlt": { "message": "Retro handheld console illustration with the GBA Studio logo" },
+  "homepage.editor.heading": { "message": "A closer look at the editors" },
+  "homepage.editor.readGuide": { "message": "Explore this editor" },
+  "homepage.editor.gameWorld.title": { "message": "Build scenes in Game World" },
+  "homepage.editor.gameWorld.description": { "message": "Arrange scenes, actors and triggers on a visual canvas, with navigation and resource estimates close at hand." },
+  "homepage.editor.gameWorld.alt": { "message": "Game World editor with scene navigation, canvas, minimap and ROM estimate" },
+  "homepage.editor.music.title": { "message": "Compose in the Music editor" },
+  "homepage.editor.music.description": { "message": "Inspect tracker modules and shape patterns with a piano roll, channel controls and song arrangement." },
+  "homepage.editor.music.alt": { "message": "Music editor with piano roll, channels, instruments and song arrangement" },
+  "homepage.editor.autotiles.title": { "message": "Configure autotiles in Settings" },
+  "homepage.editor.autotiles.description": { "message": "Set up reusable terrain tiles once, then paint connected edges and corners in your scenes." },
+  "homepage.editor.autotiles.alt": { "message": "Settings page showing the Autotiles editor and terrain tile configuration" },
   "homepage.main.featureItem.easyToUse.title": {
     "message": "🎮 Easy to Use"
   },

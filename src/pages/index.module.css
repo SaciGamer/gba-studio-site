@@ -8,7 +8,75 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-  /* background: radial-gradient(circle at 50% 80%, var(--gbas-hero-gradient)); */
+  background: radial-gradient(ellipse 82% 140% at 70% 50%, rgb(255 248 240 / 52%) 0%, rgb(245 231 213 / 30%) 58%, rgb(110 77 48 / 22%) 70%, rgb(54 37 25 / 38%) 82%, rgb(12 9 8 / 72%) 100%), var(--ifm-color-primary);
+}
+
+.heroBanner:global(.hero--primary) {
+  background: radial-gradient(ellipse 82% 140% at 70% 50%, rgb(255 248 240 / 52%) 0%, rgb(245 231 213 / 30%) 58%, rgb(110 77 48 / 22%) 70%, rgb(54 37 25 / 38%) 82%, rgb(12 9 8 / 72%) 100%), var(--ifm-color-primary);
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.heroLeft {
+  max-width: 520px;
+  align-self: start;
+  padding-top: 0;
+  transform: translateY(-1rem);
+}
+
+.heroLeft :global(.hero__subtitle) {
+  color: #fff;
+  font-size: clamp(1.6rem, 2.1vw, 2rem);
+  line-height: 1.35;
+}
+
+.availability {
+  color: #fff;
+}
+
+.heroRight {
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  perspective: 900px;
+}
+
+.heroVisual {
+  position: relative;
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  transition: transform 180ms ease-out;
+  will-change: transform;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 22px rgb(0 0 0 / 32%));
+}
+
+.heroLight {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  -webkit-mask-image: url('/img/gba-logo.png');
+  mask-image: url('/img/gba-logo.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transition: background 100ms ease-out;
 }
 
 .buttons {
@@ -26,17 +94,53 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 3rem 0 0;
-    /* background: radial-gradient(circle at 60% 60%, var(--gbs-hero-gradient)); */
+    padding: 3rem 0;
+    background: radial-gradient(ellipse 130% 105% at 50% 75%, rgb(255 248 240 / 52%) 0%, rgb(245 231 213 / 30%) 58%, rgb(110 77 48 / 22%) 70%, rgb(54 37 25 / 38%) 82%, rgb(12 9 8 / 72%) 100%), var(--ifm-color-primary);
+  }
+  .heroBanner:global(.hero--primary) {
+    background: radial-gradient(ellipse 130% 105% at 50% 75%, rgb(255 248 240 / 52%) 0%, rgb(245 231 213 / 30%) 58%, rgb(110 77 48 / 22%) 70%, rgb(54 37 25 / 38%) 82%, rgb(12 9 8 / 72%) 100%), var(--ifm-color-primary);
   }
   .heroContent {
-    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .heroLeft {
-    max-width: 450px;
+    max-width: 650px;
+  }
+  .heroRight {
+    max-width: 700px;
+  }
+  .heroVisual {
+    width: min(100%, 360px);
   } 
   .buttons :global(.button.button--secondary:hover) {
     transform: scale(1.2);
     background-color: #fff;
   } 
+}
+
+@media screen and (max-width: 576px) {
+  .heroBanner {
+    padding: 2.5rem 0;
+  }
+  .heroContent {
+    gap: 1.5rem;
+  }
+  .heroVisual {
+    width: min(100%, 280px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroVisual {
+    transform: none !important;
+    transition: none;
+  }
+  .heroImage {
+    filter: drop-shadow(0 28px 26px rgb(0 0 0 / 34%)) !important;
+  }
+  .heroLight {
+    background: radial-gradient(ellipse at center, transparent 34%, rgb(18 16 28 / 20%) 70%, rgb(18 16 28 / 46%) 100%) !important;
+    transition: none;
+  }
 }

@@ -1,31 +1,37 @@
 ---
 sidebar_position: 1
+title: GBA Studio
+description: Create Game Boy Advance games with a visual editor and the Butano engine.
 ---
 
-<!--  SOMENTE EM .mdx
-import useBaseUrl from '@docusaurus/useBaseUrl'; 
--->
+# GBA Studio
 
-# Introduction
+GBA Studio is a Windows editor for building Game Boy Advance games with a visual workflow. You create scenes, actors, backgrounds, scripts, variables, audio and other resources in the editor; the project is then converted into C++ and built with [Butano](https://github.com/GValiente/butano).
 
-GBA Studio is a drag and drop game creator for making Game Boy Advance games.
+These pages document the packaged desktop application and its project workflow. Repository maintenance, source builds and test commands are isolated in [Contributing](./contributing).
 
-It is designed to be usable by people with little to no previous programming knowledge using simple visual scripting. Used the [Butano](https://github.com/GValiente/butano) library to facilitate transpilation and compilation to the final file.
+The editor is designed to keep the game data editable and reproducible. Source resources belong in the project; generated headers, build directories and ROM files are outputs and should not be edited by hand.
 
-You can generate ROM files that can be run in an emulator, on a web page or on real Game Boy Advance hardware.
+## What the tool covers
 
-<!-- 
-SOMENTE EM .mdx
-<img src={useBaseUrl('img/screenshots/game-title.png')} alt="Menu Game Jam Print Screen" width="600" /> 
--->
-![Menu Game Jam Print Screen](/img/screenshots/game-title.png)
+- scene composition with backgrounds, actors, triggers and layers;
+- visual scripts with sequential events and branches;
+- sprites, palettes, images, music and sound effects;
+- project settings, emulator launch and build logs;
+- generation of a Butano project and a `.gba` ROM.
 
-## Support
-If you'd like to support the ongoing development of GBA Studio check out the [official Patreon](https://www.patreon.com/cw/gbastudiodev) account where you can see regular progress updates and sometimes get early access to beta releases. 
+## Important limits
 
+The target is the Game Boy Advance and its resource budgets. The available events, asset formats, tile/palette limits and runtime behavior are defined by the current editor and compiler, not by generic game-engine documentation. When a feature is not exposed by the editor or compiler, this documentation treats it as unsupported rather than assuming a future API.
 
-## Download
-You can get latest version of GBA Studio from the
-[Itch.io download page](https://sacigamer.itch.io/gba-studio) and older releases are archived on [GitHub](https://github.com/SaciGamer/gba-studio/releases).
+## Recommended path
 
-<!-- This documentation is also [available in PDF format](/assets/pdf/www.gbastudio.dev-docs.pdf). -->
+1. [Install the tool](./installation).
+2. Follow [First project](./getting-started/first-project).
+3. Learn the [editor tour](./getting-started/editor-tour) and [project structure](./getting-started/project-structure).
+4. Read the [engine overview](./concepts/engine-overview) before building more complex scripts.
+5. Use the build and release guide to produce and test a ROM.
+
+![Game World with scene navigation, canvas, floating tools, minimap and resource estimates](/img/screenshots/gba-studio/game-world-overview.png)
+
+*The Game World combines project navigation and the current scene workspace.*

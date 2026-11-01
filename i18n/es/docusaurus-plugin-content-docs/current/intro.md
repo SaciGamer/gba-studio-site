@@ -1,22 +1,26 @@
---- 
+---
 sidebar_position: 1
+title: GBA Studio
+description: Crea juegos para Game Boy Advance con un editor visual y el motor Butano.
 ---
 
-# Introducción
+# GBA Studio
 
-GBA Studio es un creador de juegos de arrastrar y soltar para Game Boy Advance.
+GBA Studio es un editor para Windows que permite crear juegos para Game Boy Advance con un flujo visual. Las escenas, actores, fondos, scripts, variables y audios se editan en la herramienta y después se convierten a C++ y se compilan con [Butano](https://github.com/GValiente/butano).
 
-Está diseñado para personas con poca o ninguna experiencia en programación, utilizando scripts visuales sencillos. La biblioteca [Butano](https://github.com/GValiente/butane) se utilizó para facilitar la transpilación y compilación del archivo final.
+Estas páginas describen la aplicación de escritorio distribuida y su flujo de proyectos. Las instrucciones para mantener el monorepo están en [Contribuir](./contributing).
 
-Puedes generar archivos ROM que se pueden ejecutar en un emulador, en una página web o en una Game Boy Advance real.
+## Límites importantes
 
-![Menu Game Jam Print Screen](/img/screenshots/game-title.png)
+El objetivo es Game Boy Advance. Los formatos de assets, tiles, paletas, eventos y el runtime dependen del editor y compilador actuales. Las funciones que no aparecen en el editor o compilador no se consideran compatibles.
 
-## Soporte
-Si deseas apoyar el desarrollo continuo de GBA Studio, visita la cuenta [oficial de Patreon](https://www.patreon.com/cw/gbastudiodev), donde podrás ver actualizaciones periódicas sobre el progreso y, en ocasiones, obtener acceso anticipado a versiones beta.
+## Ruta recomendada
 
-## Descarga
-Puedes obtener la última versión de GBA Studio en la
-[página de descargas de Itch.io](https://sacigamer.itch.io/gba-studio). Las versiones anteriores están archivadas en [GitHub](https://github.com/SaciGamer/gba-studio/releases).
+1. [Instala la herramienta](./installation).
+2. Sigue el tutorial de [primer proyecto](./getting-started/first-project).
+3. Lee la [visión general del motor](./concepts/engine-overview).
+4. Compila y prueba la ROM con la guía de build y release.
 
-<!-- Esta documentación también está [disponible en formato PDF](/assets/pdf/www.gbastudio.dev-docs.pdf). -->
+![Game World con navegación de escenas, canvas, herramientas flotantes, minimapa y estimaciones de recursos](/img/screenshots/gba-studio/game-world-overview.png)
+
+*Game World combina la navegación del proyecto con el espacio de trabajo de la escena.*

@@ -4,6 +4,18 @@
   "homepage.main.description.easy": { "message": "fácil" },
   "homepage.main.description.dragDrop": { "message": "arrastar e soltar" },
   "homepage.main.description.gameCreator": { "message": "criador de jogos" },
+  "homepage.hero.imageAlt": { "message": "Ilustração de um portátil retrô com o logotipo do GBA Studio" },
+  "homepage.editor.heading": { "message": "Conheça melhor os editores" },
+  "homepage.editor.readGuide": { "message": "Conheça este editor" },
+  "homepage.editor.gameWorld.title": { "message": "Crie cenas no Game World" },
+  "homepage.editor.gameWorld.description": { "message": "Organize cenas, atores e gatilhos em um canvas visual, com navegação e estimativas de recursos sempre à mão." },
+  "homepage.editor.gameWorld.alt": { "message": "Editor Game World com navegação de cenas, canvas, minimapa e estimativa da ROM" },
+  "homepage.editor.music.title": { "message": "Componha no editor de Music" },
+  "homepage.editor.music.description": { "message": "Explore módulos tracker e organize padrões com piano roll, controles de canais e arranjo da música." },
+  "homepage.editor.music.alt": { "message": "Editor Music com piano roll, canais, instrumentos e arranjo da música" },
+  "homepage.editor.autotiles.title": { "message": "Configure autotiles em Settings" },
+  "homepage.editor.autotiles.description": { "message": "Configure terrenos reutilizáveis uma vez e pinte bordas e cantos conectados nas cenas." },
+  "homepage.editor.autotiles.alt": { "message": "Tela Settings mostrando o editor Autotiles e a configuração de tiles de terreno" },
   "homepage.main.featureItem.easyToUse.title": {
     "message": "🎮 Fácil de Usar"
   },

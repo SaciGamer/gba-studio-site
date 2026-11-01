@@ -1,52 +1,43 @@
 ---
-sidebar_position: 7
+sidebar_position: 3
+title: Build and run
+description: Build a GBA Studio project, inspect logs and run the ROM in an emulator.
 ---
 
-# Building Your Game
+# Build and run
 
-## Play
+GBA Studio has two related flows: **Play** for a quick build-and-run cycle and **Build** for producing the project output. Both depend on valid project resources and the configured Butano toolchain.
 
-Clicking the _Play button_ in the top right of the _Project Editor_ window will start a build of your game and once complete will open a new window where you can play your game. <!-- See [Keyboard Shortcuts](/docs/getting-started/keyboard-shortcuts) for details on how to play your game in the _Play Window_. -->
+## Before building
 
-<!--
-## Run From Here
+- select or create a start scene;
+- verify that referenced backgrounds, sprites, palettes, music and scripts exist;
+- save the project;
+- close files that could lock generated output;
+- review the integrated emulator options in Settings > Demo Configuration.
 
-By right clicking on an scene in the _Project Viewport_ or the _Scene Navigator_ you can access the scene's context menu which contains the option to _Run From Here_.
+## Build
 
-<div className="drop-shadow margin-bottom"><img src="/img/screenshots/run-from-here.jpg" width="320" className="clip-bottom" /></div>
+Start the build from the application menu. The editor processes project resources, materializes the generated resource data, invokes the Butano Makefile/toolchain and reports compiler output in the build log. Treat the log as the source of truth when a build fails.
 
-This allows you to quickly preview a specific scene from your game without needing to edit the Player's [Start Position](/docs/project-editor/player#start-position). If you select the _Include Selection Only_ option then when building your game only the scenes you have currently selected will be included in the built game preview allowing faster builds when testing large games.
--->
+Generated files are disposable outputs. Preserve the project resources and source settings; do not fix a build by editing generated C++ or headers.
 
-## Build as ROM
+## Play and emulator testing
 
-Clicking the _Build button_ will build your game and create a ROM file in your project's build folder as `$PROJECT_ROOT/build/$PROJECT_NAME.gba`. You can play this ROM file in any compatible emulator such as [Virtual Boy](https://visualboyadvance.org/download/) or [mGBA](https://mgba.io/downloads.html).
+Play builds the current project and opens the integrated emulator when the build succeeds. Test at least:
 
-<!--
-## Build and deploy for Web
+- the start scene and scene transitions;
+- actor and trigger interaction;
+- dialogue input and pagination;
+- audio playback;
+- palette, sprite and background rendering.
 
-Clicking the _Export button_ and selecting _Export Web_ will build your game and create a HTML5 web build in the folder `$PROJECT_ROOT/build/web`. You can upload this folder to any web server and navigate to the `index.html` file to play your game in a web browser. If you use a mobile or tablet web browser the game will also include touch controls.
+If the emulator shows a black screen, first confirm that the ROM was generated, the start scene is valid and the build log contains no resource or linker error.
 
-If you zip the `build/web` folder you can upload it to [Itch.io](https://itch.io) as a HTML game. In this case the recommended viewport size to use is `480px` x `432px`.
+## Release checklist
 
-## Build for Pocket
-
-Clicking the _Export button_ and selecting _Export Pocket_ will build your game as a `.pocket` file for use on [Analogue Pocket](https://www.analogue.co/pocket) devices.
-
-To play your `.pocket` game:
-
-- Create a folder at the root of a MicroSD card called `GB Studio`.
-- Copy the `.pocket` file into the `GB Studio` folder
-- Insert the MicroSD card into your Pocket device.
-- From the Pocket menu choose `Tools` / `GB Studio` / `Play Creations` and select your file from the list.
-
-## Troubleshooting
-
-On macOS if you're having trouble building or running your game you may also need to install Apple's Command Line Tools by opening `Applications/Terminal.app` and entering the following command.
-
-```
-xcode-select --install
-```
-
-On Windows you may need to whitelist the application in your Anti Virus software to perform a build.
--->
+1. Save the project.
+2. Run a clean build when changing resource structure or the toolchain.
+3. Test the ROM in an emulator.
+4. Keep the source project and the final ROM together in the release archive.
+5. Record the GBA Studio, Butano and emulator versions used for the release.

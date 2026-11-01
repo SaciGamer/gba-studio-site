@@ -1,0 +1,106 @@
+.showcase {
+  padding: 4rem 0 2rem;
+}
+
+.heading {
+  margin: 0 0 1.75rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgb(0 0 0 / 14%);
+}
+
+.imageLink {
+  display: block;
+  overflow: hidden;
+  background: #1b1b1b;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  transition: transform 220ms ease;
+}
+
+.card:hover .image {
+  transform: scale(1.025);
+}
+
+.cardBody {
+  padding: 1.25rem 1.35rem 1.4rem;
+}
+
+.cardBody h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.2rem;
+}
+
+.cardBody p {
+  min-height: 4.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.cardLink {
+  font-weight: 650;
+}
+
+.cardLink span {
+  display: inline-block;
+  margin-left: 0.2rem;
+  transition: transform 140ms ease;
+}
+
+.cardLink:hover span {
+  transform: translateX(3px);
+}
+
+@media screen and (max-width: 996px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .showcase {
+    padding: 3rem 0 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cardBody p {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .image,
+  .cardLink span {
+    transition: none;
+  }
+}
