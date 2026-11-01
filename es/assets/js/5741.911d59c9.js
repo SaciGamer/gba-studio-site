@@ -1,0 +1,1 @@
+(globalThis.webpackChunkgba_studio_web_page=globalThis.webpackChunkgba_studio_web_page||[]).push([[5741],{5741:()=>{}}]);
